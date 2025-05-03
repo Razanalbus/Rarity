@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Rarity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Rarity Logo">
+                <div class="logo-text">
+                    <h1>Rarity</h1>
+                    <p>Ethical Upcycled Fashion</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="donate.html" class="active donate-btn">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="container">
+        <div class="page-banner" style="background-image: url('images/donate.png'); height:30rem; border-radius: 15px;">
+            <h1>Make a Difference</h1>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="container">
+        <div class="donation-container">
+            <div class="donation-info">
+                <h3>Why Donate to Rarity?</h3>
+                <p>Your contribution directly supports our mission to transform the lives of marginalized garment workers in Bangladesh while reducing textile waste through innovative upcycling.</p>
+                
+                <div class="impact-list">
+                    <div class="impact-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>
+                            <h4>Fair Wages</h4>
+                            <p>$25 provides a fair week's wage for one garment worker</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-tools"></i>
+                        <div>
+                            <h4>Equipment & Materials</h4>
+                            <p>$50 purchases upcycling tools and materials</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Skills Training</h4>
+                            <p>$100 funds a month of skills training for a worker</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h4>Facility Improvements</h4>
+                            <p>$500 helps improve working conditions in our facilities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4>Accountability & Transparency</h4>
+                <p>We are committed to using your donations responsibly and transparently. 85% of all donations go directly to our programs, with only 15% used for administrative costs.</p>
+                <p>View our <a href="reports/annual-impact-2022.pdf" class="text-link">latest impact report</a> to see how your donations make a difference.</p>
+                
+                <div class="donation-methods">
+                    <h4>Other Ways to Support</h4>
+                    <div class="method-grid">
+                        <div class="donation-method">
+                            <i class="fas fa-tshirt"></i>
+                            <h5>Donate Clothing</h5>
+                            <p>Send gently used clothing to our collection centers</p>
+                        </div>
+                        <div class="donation-method">
+                            <i class="fas fa-hands-helping"></i>
+                            <h5>Volunteer</h5>
+                            <p>Share your skills and time with our organization</p>
+                        </div>
+                        <div class="donation-method">
+                            <i class="fas fa-bullhorn"></i>
+                            <h5>Spread the Word</h5>
+                            <p>Follow and share our story on social media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="donation-form-container">
+                <div class="donation-form">
+                    <h3>Donate Now</h3>
+                    <form id="donationForm">
+                        <div class="donation-amount">
+                            <button type="button" class="amount-btn" data-amount="25">$25</button>
+                            <button type="button" class="amount-btn" data-amount="50">$50</button>
+                            <button type="button" class="amount-btn" data-amount="100">$100</button>
+                            <button type="button" class="amount-btn" data-amount="custom">Custom</button>
+                        </div>
+                        
+                        <div class="form-group custom-amount" style="display: none;">
+                            <label for="customAmount">Custom Amount ($)</label>
+                            <input type="number" id="customAmount" class="form-control" placeholder="Enter amount">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" class="form-control" rows="3" placeholder="Share why you're donating"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Payment Method</label>
+                            <div class="payment-methods">
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="creditCard" checked>
+                                    <span><i class="far fa-credit-card"></i> Credit Card</span>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="paypal">
+                                    <span><i class="fab fa-paypal"></i> PayPal</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div id="creditCardFields">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number</label>
+                                <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" class="form-control" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group half">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" class="form-control" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="recurringDonation">
+                                <span class="checkmark"></span>
+                                Make this a monthly donation
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Donate Now</button>
+                        
+                        <div class="secure-payment">
+                            <i class="fas fa-lock"></i> Secure payment processing. Your information is protected.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.png" alt="Rarity Logo">
+                        <h3>Rarity</h3>
+                    </div>
+                    <p>Transforming fast-fashion waste into ethical, sustainable clothing while supporting marginalized garment workers in Bangladesh.</p>
+                </div>
+                <div class="footer-links-container">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@raritycharity.org</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rarity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Donation Amount Selection
+        const amountBtns = document.querySelectorAll('.amount-btn');
+        const customAmountField = document.querySelector('.custom-amount');
+        
+        amountBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                amountBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                if (this.dataset.amount === 'custom') {
+                    customAmountField.style.display = 'block';
+                } else {
+                    customAmountField.style.display = 'none';
+                }
+            });
+        });
+        
+        // Payment Method Toggle
+        const paymentMethods = document.querySelectorAll('input[name="paymentMethod"]');
+        const creditCardFields = document.getElementById('creditCardFields');
+        
+        paymentMethods.forEach(method => {
+            method.addEventListener('change', function() {
+                if (this.value === 'creditCard') {
+                    creditCardFields.style.display = 'block';
+                } else {
+                    creditCardFields.style.display = 'none';
+                }
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('donationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your donation! This is a demo form - in a real implementation, you would be redirected to a secure payment processor.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rarity - Donate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/your-logo.png" alt="Rarity Logo" />
+        <div class="logo-text">
+          <h1>Rarity</h1>
+          <p>Redefining Fashion Through Purpose</p>
+        </div>
+      </a>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Work</a></li>
+        <li><a href="donation.html" class="active donate-btn">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="donate">
+      <h1>Make a Donation</h1>
+      <p>
+        Your contribution supports fair wages, sustainable practices, and community empowerment.
+      </p>
+      <form id="donation-form">
+        <label for="donation-amount">Donation Amount:</label>
+        <select id="donation-amount">
+          <option value="25">$25</option>
+          <option value="50">$50</option>
+          <option value="100">$100</option>
+          <option value="250">$250</option>
+          <option value="custom">Custom</option>
+        </select>
+        <div id="custom-amount-container" style="display: none;">
+          <label for="custom-amount">Enter Custom Amount:</label>
+          <input type="number" id="custom-amount" placeholder="Enter amount" />
+        </div>
+        <label for="donor-name">Your Name:</label>
+        <input type="text" id="donor-name" required />
+        <label for="donor-email">Your Email:</label>
+        <input type="email" id="donor-email" required />
+        <label for="donor-message">Message (Optional):</label>
+        <textarea id="donor-message"></textarea>
+        <button type="submit">Complete Donation</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rarity Charity. All rights reserved.</p>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

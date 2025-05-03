@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rarity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="Rarity Logo">
+                <div class="logo-text">
+                    <h1>Rarity</h1>
+                    <p>Ethical Upcycled Fashion</p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="container">
+        <div class="page-banner" style="background-image: url('images/contactus.png'); height:30rem; border-radius: 15px;">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you! Whether you have questions about our work, want to collaborate, or are interested in supporting our mission, please reach out using the form or contact details below.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@raritycharity.org">info@raritycharity.org</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+8801234567890">+880 1234 567890</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Main Office</h4>
+                            <p>123 Garment District, Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <h4>Office Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="What is this regarding?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" rows="5" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Find Us</h2>
+                <p>Our locations and service areas in Bangladesh</p>
+            </div>
+            
+            <div class="map-container">
+                <!-- Google Maps Embed -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38703692693!2d90.27923991878397!3d23.780573258035957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1630000000000!5m2!1sen!2sus" 
+                width="100%" height="450" style="border:0; border-radius: var(--radius);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="service-areas">
+                <h3>Our Service Areas</h3>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="area-content">
+                            <h4>Dhaka Slums</h4>
+                            <p>Our primary production facility is located near Korail, one of Dhaka's largest slums, where we employ local residents. We also serve the Hazaribagh area.</p>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="area-content">
+                            <h4>Kurigram</h4>
+                            <p>Our northern Bangladesh operations focus on this region, which faces high poverty rates and limited employment opportunities.</p>
+                        </div>
+                    </div>
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="area-content">
+                            <h4>Gaibandha</h4>
+                            <p>We've recently expanded to Gaibandha, providing training and employment to local garment workers while distributing upcycled clothing to those in need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="visit-info">
+                <h3>Planning a Visit?</h3>
+                <p>If you're interested in visiting our facilities or learning more about our work firsthand, please contact us to arrange a tour. We welcome visitors who want to see the impact of our work and meet the talented artisans behind our upcycled creations.</p>
+                <div class="directions">
+                    <h4>Directions to Main Office</h4>
+                    <ul>
+                        <li><i class="fas fa-plane"></i> From Hazrat Shahjalal International Airport: 45 minutes by car</li>
+                        <li><i class="fas fa-bus"></i> Public Transportation: Take bus route #27 to Garment District stop</li>
+                        <li><i class="fas fa-car"></i> Parking available on premises for visitors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo1.png" alt="Rarity Logo">
+                        <h3>Rarity</h3>
+                    </div>
+                    <p>Transforming fast-fashion waste into ethical, sustainable clothing while supporting marginalized garment workers in Bangladesh.</p>
+                </div>
+                <div class="footer-links-container">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> info@raritycharity.org</li>
+                        <li><i class="fas fa-phone"></i> +880 1234 567890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rarity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Form Submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
